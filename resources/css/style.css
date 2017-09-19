@@ -101,6 +101,10 @@ nav ul {
   align-items: center;
 }
 
+nav .menu {
+  display: none;
+}
+
 /* Main Container */
 
 main {
@@ -158,7 +162,7 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
   width: 100%;
 }
 
@@ -183,6 +187,7 @@ main {
 
 .contact p {
   padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -200,4 +205,101 @@ footer .middle {
   width: 960px;
   display: flex;
   align-items: center;
+}
+
+/* Media Queries for Screen Size */
+
+@media only screen and (max-width: 1024px) {
+
+  .banner {
+    font-size: 14px;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .banner h2 {
+    font-size: 1em;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .shop {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .item {
+    width: 47%;
+    margin: 4px;
+  }
+
+  #item3 {
+    display: none;
+  }
+}
+
+.middle div {
+  margin: 0rem 1rem;
+}
+
+/* Media Query for Small Devices */
+
+@media only screen and (max-width: 470px) {
+
+   .banner h1 {
+     font-size: 1rem;
+   }
+
+   .banner h2 {
+     font-size: 0.77rem;
+   }
+
+   .banner {
+     height: 15rem;
+   }
+
+   .banner .banner-text {
+     width: 100%;
+     padding: 1rem 2rem;
+     margin-top: 10rem;
+   }
+
+   #item2 {
+     display: none;
+   }
+
+   .shop {
+     width: 100%;
+     justify-content: center;
+   }
+
+   #item1 {
+     width: 90%;
+   }
+
+   .contact .middle {
+     flex-direction: column;
+   }
+
+   .middle div {
+     width: 90%;
+   }
+
+   .contact .labelbox {
+     width: 90%;
+   }
+
+   footer .middle {
+     flex-direction: column;
+     justify-content: center;
+   }
 }
